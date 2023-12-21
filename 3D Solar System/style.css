@@ -1,0 +1,44 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#bird {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 100px; 
+  height: auto;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  width: 200px;
+  height: auto;
+  opacity: 0.5;
+  color: white;
+}
+
+#text1 {
+  position: absolute;
+  top: 92%;
+  left: 45%;
+  width: 200px;
+  height: auto;
+  opacity: 0.5;
+  color: white;
+}
