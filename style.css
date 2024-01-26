@@ -1,0 +1,75 @@
+p {
+    font-family: "Rubik", sans-serif;
+    color: white;
+    font-size: 5vw;
+    margin: 0;
+    pointer-events: pointer;
+    text-align: center;
+    transition: opacity 250ms ease;
+    user-select: none;
+}
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.fancy > .letter{
+    display: inline-block;
+}
+
+.fancy > .letter {
+    transition: transform 350ms ease;
+  }
+  
+  .fancy:hover > .letter {
+    transition-duration: 900ms;
+  }
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+    opacity: 0.2;
+  }
+
+  .fancy:hover > .letter:nth-child(1) {
+    transform: translate(-60%, 40%) rotate(12deg);
+  }
+  
+  .fancy:hover > .letter:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(4deg);
+  }
+  
+  .fancy:hover > .letter:nth-child(3) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+  }
+  
+  .fancy:hover > .letter:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg);
+  }
+  
+  .fancy:hover > .letter:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+  }
+  
+  .fancy:hover > .letter:nth-child(6) {
+    transform: translate(0%, 20%) rotate(-3deg);
+  }
+  
+  .fancy:hover > .letter:nth-child(7) {
+    transform: translate(0%, -20%) rotate(-15deg);
+  }
+  
+  #image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(0%, -30%); 
+    user-select: none; 
+  }
+  
+  #image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+  }
