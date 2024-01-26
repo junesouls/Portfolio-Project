@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Single+Day&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Janken 🎮</h1>
+        </div>
+        
+        <div class="games">
+            <div class="playerside">
+                <p>Rock Paper Scissors ✂️:</p>
+                <button class="gameButton" onclick="playGame('rock')">Rock 🗿</button>
+                <button class="gameButton" onclick="playGame('paper')">Paper 📃</button>
+                <button class="gameButton" onclick="playGame('scissors')">Scissors ✂️</button>
+                <div id="gameResult"></div>
+            </div>
+
+            <div class="coinToss">
+                <p>Toss a Coin 🟡 :</p>
+                <button class="gameButton" onclick="tossCoin()">Toss Coin 💬</button>
+                <div id="coinResult"></div>
+            </div>
+
+            <div class="diceRoll">
+                <p>Roll a Dice 🎲 :</p>
+                <button class="gameButton" onclick="rollDice()">Roll Dice 🎲 </button>
+                <div id="diceResult"></div>
+            </div>
+            <div id="totalCount"></div>
+
+
+    <script src="code.js"></script>
+</body>
+</html>

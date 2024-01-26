@@ -1,0 +1,148 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 10%;
+    background-color: rgb(8, 95, 30);
+    color: azure;
+    z-index: 5;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1 {
+    background-image: url('circle-scatter-haikei.svg');
+}
+
+.logo img {
+    width: 8vh; 
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.utensil {
+    height: auto;
+    margin: 0 10px;
+    position: fixed;
+    transform: translateY(-50%);
+    width: 12vh;
+    opacity: 0.8;
+}
+
+.fork {
+    left: 15%;
+    animation: float 2s ease-in-out infinite;
+}
+
+.knife {
+    left: 78%;
+    animation: float 2s ease-in-out infinite;
+
+}
+
+
+@keyframes float{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.title {
+    position: relative;
+    text-align: center; 
+    padding: 10px;
+    margin-top: 10%; 
+    margin-bottom: -10px; 
+    z-index: 1;
+}
+
+.title h2 {
+    font-family: 'Gabarito', sans-serif;
+    color: white; 
+    font-size: 6vh;
+}
+
+h2 {
+    margin: 0; 
+}
+
+body, html {
+    background-color: #119B34;
+}
+
+.content {
+    height: 80%;
+    padding: 10px;
+    text-align: center;
+    background-image: url('blob-haikei.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.imageButton {
+    padding: 10px;
+    background-color: rgb(218, 235, 37);
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin: 3px;
+    font-family: 'Gabarito', sans-serif;
+    
+    transition: background-color 0.5s ease; 
+}
+
+.imageButton:hover {
+    background-color: #f6fe81; 
+}
+
+.nutrition-info {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 20px;
+    white-space: pre-line;
+    color: white;
+}
+
+/* scoll animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(4vh);
+    transition: opacity 1s ease, transform 2s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(-4vh);
+}
+
+/* scrollbar */
+body {
+    scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fcf9f9; 
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #000000; 
+}
